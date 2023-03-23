@@ -1,55 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adicionar Produto</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Nome da Loja</title>
+
 </head>
 <body>
-    <div>
-        <p>Nome da lojinha</p>
+    <div class="header">
+        <h1>Bem-vindo ao <em>Meu estabelecimento</em>!</h1>
+        <p><strong>Aonde seu cu tem dono!</strong></p>
     </div>
-    
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+
+    <div class="buttons">
+        <a href="index.html"><button class="pagebuttons" id="fontbutton" >Página Inicial</button></a>
+        <a href="ctrl-estoque.html"><button class="pagebuttons" id="fontbutton" >Controle de Estoque</button></a>
+        <a href="add-produto.html"><button class="pagebuttons" id="fontbutton" >Adicionar Produtos</button></a>
+        <a href="funcionarios.html"><button class="pagebuttons" id="fontbutton" >Funcionários</button></a>
     </div>
 
     
     <h2>Adicionar Produto</h2>
-    <form action="#">
-        <div>
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
-        </div>
-        
-        <div>
-            <label for="descricao">Descrição do produto: </label>
-            <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="descricao" name="descrição">
-        </div>
-        
-        <div>
-            <label for="preco">Preço (em R$): </label>
-            <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="" id="preco" name="preço">
-        </div>
-        
-        <div>
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label>Quantidade disponível: </label>
-            <input>
-        </div>
+    <div class="addprod">
+        <form action="#">
 
-        <div class="form-add">
-            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="button">Adicionar</button>
-        </div>
-
-    </form>
+            <div class="infoprod">
+                <label for="link-foto">Link para foto: </label>
+                <input type="url" id="link-foto" name="link-foto">
+            </div>
+            
+            <div class="infoprod">
+                <label for="descricao">Descrição do produto: </label>
+                <!-- Adicione o id apropriado para o input abaixo -->
+                <input type="text" id="descricao" name="descrição">
+            </div>
+            
+            <div class="infoprod">
+                <label for="preco">Preço (em R$): </label>
+                <!-- Adicione o id apropriado e o type para receber números abaixo -->
+                <input type="text" id="preco" name="preço">
+            </div>
+            
+            <div class="infoprod">
+                <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+                <label>Quantidade disponível: </label>
+                <input>
+            </div>
+    
+            <div class="form-add">
+                <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+                <button type="button">Adicionar</button>
+            </div>
+    
+        </form>
+    </div>
+    
+            <!--FOOTER -->
+        
+            <div class="footer">
+                <h3>Siga-nos nas redes sociais!</h3>
+                
+                <a href="https://www.facebook.com/" target="_blank" ><img src="img/facebookicon - 64.png"></a>
+                <a href="https://www.instagram.com/" target="_blank" ><img src="img/instagramicon - 64.png"></a>
+            </div>
 
 </body>
 </html>
